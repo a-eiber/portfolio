@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -31,8 +32,8 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? 'fixed w-full h-20 shadow-xl z-[100]'
-          : 'fixed w-full h-20 z-[100]'
+          ? 'fixed w-full h-20 shadow-xl z-[100] bg-[#eff6fc]'
+          : 'fixed w-full h-20 z-[100] bg-[#eff6fc]'
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
