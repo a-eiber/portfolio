@@ -15,12 +15,12 @@ const Projects = () => {
           <ProjectItem
             title="Tiger Sports Basketball League"
             backgroundImg={tigerImg}
-            projectUrl="/tiger-sports-basketball-league"
+            projectUrl="/tigerProject"
           />
           <ProjectItem
             title="Poké  Mart"
             backgroundImg={pokeImg}
-            projectUrl="/poke-mart"
+            projectUrl="/pokeProject"
           />
         </div>
       </div>
