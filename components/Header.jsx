@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import logo from '../public/assets/logo.png';
 
 const Header = () => {
   return (
@@ -9,12 +10,7 @@ const Header = () => {
         <div className="my-4 md:mb-0">
           <Link href="/">
             <a>
-              <Image
-                src="/../public/assets/logo.png"
-                alt="/"
-                width="250"
-                height="50"
-              />
+              <Image src={logo} alt="/" width="250" height="50" />
             </a>
           </Link>
         </div>

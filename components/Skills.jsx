@@ -1,5 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
+import javascriptImg from '../public/assets/skills/javascript.png';
+import nodeImg from '../public/assets/skills/node.png';
+import reactImg from '../public/assets/skills/react.png';
+import reduxImg from '../public/assets/skills/redux2.png';
+import postgresImg from '../public/assets/skills/postgresql.png';
+import sequelizeImg from '../public/assets/skills/sequelize.png';
+import expressImg from '../public/assets/skills/express.png';
+import githubImg from '../public/assets/skills/github1.png';
 
 const Skills = () => {
   return (
@@ -14,12 +22,7 @@ const Skills = () => {
           <div className="p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/javascript.png"
-                  alt="/"
-                  width="64px"
-                  height="64px"
-                />
+                <Image src={javascriptImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>JavaScript</h3>
@@ -30,12 +33,7 @@ const Skills = () => {
           <div className="p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/node.png"
-                  alt="/"
-                  width="64px"
-                  height="64px"
-                />
+                <Image src={nodeImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Node</h3>
@@ -46,12 +44,7 @@ const Skills = () => {
           <div className="p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/react.png"
-                  alt="/"
-                  width="64px"
-                  height="64px"
-                />
+                <Image src={reactImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>React</h3>
@@ -62,12 +55,7 @@ const Skills = () => {
           <div className="p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/redux2.png"
-                  alt="/"
-                  width="64px"
-                  height="64px"
-                />
+                <Image src={reduxImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Redux</h3>
@@ -78,12 +66,7 @@ const Skills = () => {
           <div className="p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/postgresql.png"
-                  alt="/"
-                  width="64px"
-                  height="64px"
-                />
+                <Image src={postgresImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>PostgreSQL</h3>
@@ -94,12 +77,7 @@ const Skills = () => {
           <div className="p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/sequelize.png"
-                  alt="/"
-                  width="64px"
-                  height="64px"
-                />
+                <Image src={sequelizeImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Sequelize</h3>
@@ -110,12 +88,7 @@ const Skills = () => {
           <div className="p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/express.png"
-                  alt="/"
-                  width="64px"
-                  height="64px"
-                />
+                <Image src={expressImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Express</h3>
@@ -126,12 +99,7 @@ const Skills = () => {
           <div className="p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/github1.png"
-                  alt="/"
-                  width="64px"
-                  height="64px"
-                />
+                <Image src={githubImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>GitHub</h3>
