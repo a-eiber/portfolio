@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Navbar from '../components/Navbar';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Main from '../components/Main';
@@ -16,7 +15,6 @@ export default function Home() {
         <meta name="description" content="Alec Eiber Personal Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Navbar /> */}
       <Header />
       <Main />
       <About />

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import Tooltip from '@nextui-org/react/tooltip';
 import React, { useRef } from 'react';
@@ -6,6 +5,8 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { GrDocumentUser } from 'react-icons/gr';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import emailjs from '@emailjs/browser';
+import { useRouter } from 'next/router';
 
 const useFocus = () => {
   const htmlElRef = useRef(null);
@@ -18,6 +19,31 @@ const useFocus = () => {
 
 const Contact = () => {
   const [inputRef, setInputFocus] = useFocus();
+
+  const router = useRouter();
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_iglj8hp',
+        'template_ocir5nz',
+        form.current,
+        'lRDeCTGKxPHv30KMl'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          router.push('/confirm');
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 pt-8 w-full">
@@ -69,38 +95,57 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                 <div className="flex flex-col">
-                  <label className="uppercase text-sm py-2">Name</label>
+                  <label htmlFor="user_name" className="uppercase text-sm py-2">
+                    Name
+                  </label>
                   <input
                     ref={inputRef}
                     required
                     type="text"
-                    className="border-2 rounded-lg p-3 flex border-gray-300"
+                    name="user_name"
+                    id="user_name"
+                    className="border-2 rounded-lg p-3 flex border-gray-300 text-lg"
                   />
                 </div>
                 <div className="flex flex-col">
-                  <label className="uppercase text-sm py-2">Email</label>
+                  <label
+                    htmlFor="user_email"
+                    className="uppercase text-sm py-2"
+                  >
+                    Email
+                  </label>
                   <input
                     required
                     type="email"
-                    className="border-2 rounded-lg p-3 flex border-gray-300"
+                    name="user_email"
+                    id="user_email"
+                    className="border-2 rounded-lg p-3 flex border-gray-300 text-lg"
                   />
                 </div>
               </div>
               <div className="flex flex-col py-2">
-                <label className="uppercase text-sm py-2">Message</label>
+                <label htmlFor="message" className="uppercase text-sm py-2">
+                  Message
+                </label>
                 <textarea
                   required
-                  className="border-2 rounded-lg p-3 border-gray-300"
+                  name="message"
+                  id="message"
+                  className="border-2 rounded-lg p-3 border-gray-300 text-lg"
                   rows="10"
                 />
               </div>
-
-              <button className="w-full p-4 text-gray-100 mt-4">
-                Send Message
-              </button>
+              <div className="flex items-center">
+                <button
+                  type="submit"
+                  className="w-[90%] mx-auto p-4 text-gray-100 mt-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#21568a] to-[#1d97bd] cursor-pointer hover:scale-105 ease-in duration-300"
+                >
+                  Send Message
+                </button>
+              </div>
             </form>
           </div>
         </div>

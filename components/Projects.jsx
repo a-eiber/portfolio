@@ -16,11 +16,13 @@ const Projects = () => {
             title="Tiger Sports Basketball League"
             backgroundImg={tigerImg}
             projectUrl="/tigerProject"
+            description="A league website for players, coaches, and administrators"
           />
           <ProjectItem
-            title="Poké  Mart"
+            title="Poké Mart"
             backgroundImg={pokeImg}
             projectUrl="/pokeProject"
+            description="An e-commerce website based on the in-game marts found in the Pokémon series"
           />
         </div>
       </div>
