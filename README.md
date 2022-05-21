@@ -1,3 +1,3 @@
 ## Alec Eiber's Portfolio Website
 
-https://www.aleceiber.com
+Please visit https://www.aleceiber.com
