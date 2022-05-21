@@ -5,7 +5,7 @@ import logo from '../public/assets/logo.png';
 
 const Header = () => {
   return (
-    <div className="w-full h-28 z-[100] bg-[#eff6fc]">
+    <div className="w-full h-28 z-[100] bg-[#f4f3ee]">
       <div className="flex flex-col md:flex-row md:justify-between items-center w-full h-full px-2 2xl:px-16">
         <div className="my-4 md:mb-0">
           <Link href="/">

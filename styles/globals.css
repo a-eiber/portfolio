@@ -4,12 +4,11 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Roboto Flex', sans-serif;
 }
 
 @layer base {
   body {
-    @apply bg-[#eff6fc] text-gray-800 tracking-wide;
+    @apply bg-[#f4f3ee] text-gray-800 tracking-wide;
   }
 
   h1,

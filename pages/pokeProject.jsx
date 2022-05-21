@@ -72,7 +72,7 @@ const pokeProject = () => {
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer mt-10">Back</p>
+          <p className="underline cursor-pointer my-10">Back</p>
         </Link>
       </div>
     </div>
