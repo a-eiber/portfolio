@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import React from 'react';
-import pokeImage from '../public/assets/projects/poke-mart2.jpg';
+import inkImage from '../public/assets/projects/inkBuzz.jpg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 import Header from '../components/Header';
 
-const pokeProject = () => {
+const inkBuzzProject = () => {
   return (
     <div className="w-full">
       <Header />
@@ -15,14 +15,13 @@ const pokeProject = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={pokeImage}
+          src={inkImage}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2  ml-5">Poké Mart E-Commerce Store</h2>
+          <h2 className="py-2  ml-5">Ink Buzz Social Media Platform</h2>
           <h3 className="ml-5">
-            An e-commerce website based on the in-game marts found in the
-            Pokémon series
+            A social media platform where users can connect with tattoo artists
           </h3>
         </div>
       </div>
@@ -30,16 +29,34 @@ const pokeProject = () => {
       <div className="max-w-[1240px] mx-auto p-2 flex flex-col pt-8 px-8">
         <div className="col-span-4">
           <h2>Overview</h2>
-          <p>
-            An online e-commerce version of the store popularly found in Pokémon
-            games. Guests can add items to their cart, edit cart items, and
-            checkout, with cart items saved in local storage. Users who create
-            an account can have their cart items persist in an SQL database.
+          <p className="my-3">
+            Managed a team of 3 developers in creating, designing, and deploying
+            a social media web application where users connect with tattoo
+            artists. This was a group project built in 20 days and is intended
+            to showcase a minimum viable product for a social media app with
+            crypto built-in.
           </p>
-          <a href="https://poke-mart-fsa.herokuapp.com/">
+
+          <p>
+            The site is as a Progressive Web Application (PWA) so it would be
+            available on all platforms without any extra fees or restrictions.
+            Using React, Redux Toolkit, and the Chakra component library, the
+            front end is completely responsive for all screen sizes. On the back
+            end, the app uses Firebase for authentication, storage, and hosting.
+          </p>
+
+          <p className="my-3">
+            Users can view and search for different tattoos, favorite designs,
+            follow specific artists, and within the chat feature, message and
+            pay artists using crypto currencies like ethereum. Transactions are
+            stored on the blockchain to verify payments and the transfer of
+            specific designs.
+          </p>
+
+          <a href="https://ink-buzz.web.app/">
             <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           </a>
-          <a href="https://github.com/a-eiber/poke-mart">
+          <a href="https://github.com/FSA-CapStone-TeamAwesome/ink-buzz-pwa">
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </a>
         </div>
@@ -54,22 +71,25 @@ const pokeProject = () => {
                 <RiRadioButtonFill className="pr-1" /> Redux Toolkit
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> PostgreSQL
+                <RiRadioButtonFill className="pr-1" /> Coinbase Wallet SDK
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Sequelize
+                <RiRadioButtonFill className="pr-1" /> Ether.js
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Node
+                <RiRadioButtonFill className="pr-1" /> Infura
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Express
+                <RiRadioButtonFill className="pr-1" /> Web3.js
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> React-Bootstrap
+                <RiRadioButtonFill className="pr-1" /> Wallet Connect
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> JSON Web Tokens
+                <RiRadioButtonFill className="pr-1" /> Google Firebase
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Chakra UI
               </p>
             </div>
           </div>
@@ -82,4 +102,4 @@ const pokeProject = () => {
   );
 };
 
-export default pokeProject;
+export default inkBuzzProject;
