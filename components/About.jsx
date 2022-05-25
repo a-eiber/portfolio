@@ -48,8 +48,9 @@ const About = () => {
                 Check out some of my latest projects
               </Link>
             </p>
+
             <p className="py-2 text-gray-600 underline cursor-pointer">
-              <a href="/assets/Alec_Eiber_Resume.pdf">
+              <a href="/assets/Alec_Eiber_Resume1.pdf">
                 Click here to view my resume
               </a>
             </p>

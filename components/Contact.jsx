@@ -87,7 +87,7 @@ const Contact = () => {
                 </div>
 
                 <div className="mx-auto ">
-                  <a href="/assets/Alec_Eiber_Resume.pdf">
+                  <a href="/assets/Alec_Eiber_Resume1.pdf">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300">
                       <GrDocumentUser className="mx-auto mb-1" /> Resume
                     </div>

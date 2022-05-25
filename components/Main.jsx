@@ -19,6 +19,11 @@ const Main = () => {
             City. I love programming and have a passion for building tech
             that&apos;s impactful to people.
           </p>
+          <p className="pt-2 pb-8 text-gray-600 max-w-[70%] m-auto underline cursor-pointer">
+            <a href="/assets/Alec_Eiber_Resume1.pdf">
+              Click here to view my resume
+            </a>
+          </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <a href="https://www.linkedin.com/in/aleceiber">
               <Tooltip content={'LinkedIn'} rounded color="primary">
@@ -41,7 +46,7 @@ const Main = () => {
                 </div>
               </Link>
             </Tooltip>
-            <a href="/assets/Alec_Eiber_Resume.pdf">
+            <a href="/assets/Alec_Eiber_Resume1.pdf">
               <Tooltip content={'Resume'} rounded color="primary">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <GrDocumentUser />
