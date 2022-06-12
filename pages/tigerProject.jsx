@@ -1,15 +1,21 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 import tigerImage from '../public/assets/projects/tiger.jpg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 import Header from '../components/Header';
 
-const tigerProject = () => {
+const TigerProject = () => {
+  const [collapse, setCollapse] = useState(true);
   return (
     <div className="w-full">
-      <Header />
-      <div className="w-screen h-[30vh] relative">
+      <Header collapse={collapse} setCollapse={setCollapse} />
+      <div
+        className={
+          collapse
+            ? 'w-screen h-[30vh] relative'
+            : 'w-screen h-[30vh] relative mt-60'
+        }>
         <div className="absolute top-0 left-0 w-full h-[30vh] bg-black/80 z-10" />
         <Image
           className="absolute z-1"
@@ -20,7 +26,7 @@ const tigerProject = () => {
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2 ml-5">Tiger Sports Basketball League</h2>
-          <h3 className="ml-5">
+          <h3 className="ml-5 mb-2">
             A league website for players, coaches, and administrators
           </h3>
         </div>
@@ -81,4 +87,4 @@ const tigerProject = () => {
   );
 };
 
-export default tigerProject;
+export default TigerProject;
