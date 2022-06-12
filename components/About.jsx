@@ -17,8 +17,8 @@ const About = () => {
               <Image
                 src={profile}
                 alt="/"
-                width="400"
-                height="400"
+                width="300"
+                height="300"
                 className="rounded-xl"
               />
             </div>
@@ -32,9 +32,16 @@ const About = () => {
             <p className="py-2 text-gray-600">
               After completing my service and being honorably discharged, my
               passion for coding grew stronger, so I decided to get a formal
-              education in full stack development. I applied to Fullstack
-              Academy&apos;s Software Engineering immersive program and was
-              fortunate enough to be accepted and graduate.
+              education in full stack development. I applied to{' '}
+              <a
+                href="/assets/certificate.pdf"
+                className="underline cursor-pointer"
+                target="_blank"
+                rel="noreferrer">
+                Fullstack Academy&apos;s
+              </a>{' '}
+              Software Engineering immersive program and was fortunate enough to
+              be accepted and graduate.
             </p>
 
             <p className="py-2 text-gray-600">
@@ -50,7 +57,10 @@ const About = () => {
             </p>
 
             <p className="py-2 text-gray-600 underline cursor-pointer">
-              <a href="/assets/Alec_Eiber_Resume1.pdf">
+              <a
+                href="/assets/Alec_Eiber_Resume1.pdf"
+                target="_blank"
+                rel="noreferrer">
                 Click here to view my resume
               </a>
             </p>

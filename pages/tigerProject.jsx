@@ -35,7 +35,10 @@ const tigerProject = () => {
             updates. Project is still in progress.
           </p>
           {/* <button className="px-8 py-2 mt-4 mr-8">Demo</button> */}
-          <a href="https://github.com/a-eiber/tigerbasketball">
+          <a
+            href="https://github.com/a-eiber/tigerbasketball"
+            target="_blank"
+            rel="noreferrer">
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </a>
         </div>

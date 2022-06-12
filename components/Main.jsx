@@ -20,19 +20,28 @@ const Main = () => {
             that&apos;s impactful to people.
           </p>
           <p className="pt-2 pb-8 text-gray-600 max-w-[70%] m-auto underline cursor-pointer">
-            <a href="/assets/Alec_Eiber_Resume1.pdf">
+            <a
+              href="/assets/Alec_Eiber_Resume1.pdf"
+              target="_blank"
+              rel="noreferrer">
               Click here to view my resume
             </a>
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <a href="https://www.linkedin.com/in/aleceiber">
+            <a
+              href="https://www.linkedin.com/in/aleceiber"
+              target="_blank"
+              rel="noreferrer">
               <Tooltip content={'LinkedIn'} rounded color="primary">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <FaLinkedinIn />
                 </div>
               </Tooltip>
             </a>
-            <a href="https://www.github.com/a-eiber">
+            <a
+              href="https://www.github.com/a-eiber"
+              target="_blank"
+              rel="noreferrer">
               <Tooltip content={'GitHub'} rounded color="primary">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <FaGithub />
@@ -46,7 +55,10 @@ const Main = () => {
                 </div>
               </Link>
             </Tooltip>
-            <a href="/assets/Alec_Eiber_Resume1.pdf">
+            <a
+              href="/assets/Alec_Eiber_Resume1.pdf"
+              target="_blank"
+              rel="noreferrer">
               <Tooltip content={'Resume'} rounded color="primary">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <GrDocumentUser />

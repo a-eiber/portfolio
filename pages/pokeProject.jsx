@@ -36,10 +36,16 @@ const pokeProject = () => {
             checkout, with cart items saved in local storage. Users who create
             an account can have their cart items persist in an SQL database.
           </p>
-          <a href="https://poke-mart-fsa.herokuapp.com/">
+          <a
+            href="https://poke-mart-fsa.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer">
             <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           </a>
-          <a href="https://github.com/a-eiber/poke-mart">
+          <a
+            href="https://github.com/a-eiber/poke-mart"
+            target="_blank"
+            rel="noreferrer">
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </a>
         </div>

@@ -23,7 +23,7 @@ const Contact = () => {
   const router = useRouter();
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = e => {
     e.preventDefault();
 
     emailjs
@@ -34,11 +34,11 @@ const Contact = () => {
         'lRDeCTGKxPHv30KMl'
       )
       .then(
-        (result) => {
+        result => {
           console.log(result.text);
           router.push('/confirm');
         },
-        (error) => {
+        error => {
           console.log(error.text);
         }
       );
@@ -57,7 +57,10 @@ const Contact = () => {
             <div>
               <div className="grid grid-cols-2 gap-8 py-4 sm:flex sm:flex-wrap sm:items-center sm:justify-around">
                 <div className="mx-auto ">
-                  <a href="https://www.linkedin.com/in/aleceiber">
+                  <a
+                    href="https://www.linkedin.com/in/aleceiber"
+                    target="_blank"
+                    rel="noreferrer">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaLinkedinIn className="mx-auto mb-1" /> LinkedIn
                     </div>
@@ -65,7 +68,10 @@ const Contact = () => {
                 </div>
 
                 <div className="mx-auto ">
-                  <a href="https://www.github.com/a-eiber">
+                  <a
+                    href="https://www.github.com/a-eiber"
+                    target="_blank"
+                    rel="noreferrer">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaGithub className="mx-auto mb-1" /> GitHub
                     </div>
@@ -78,8 +84,7 @@ const Contact = () => {
                     rounded
                     color="primary"
                     onClick={setInputFocus}
-                    className="rounded-full shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300"
-                  >
+                    className="rounded-full shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300">
                     <div>
                       <AiOutlineMail className="mx-auto mb-1" /> Email Me
                     </div>
@@ -87,7 +92,10 @@ const Contact = () => {
                 </div>
 
                 <div className="mx-auto ">
-                  <a href="/assets/Alec_Eiber_Resume1.pdf">
+                  <a
+                    href="/assets/Alec_Eiber_Resume1.pdf"
+                    target="_blank"
+                    rel="noreferrer">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300">
                       <GrDocumentUser className="mx-auto mb-1" /> Resume
                     </div>
@@ -113,8 +121,7 @@ const Contact = () => {
                 <div className="flex flex-col">
                   <label
                     htmlFor="user_email"
-                    className="uppercase text-sm py-2"
-                  >
+                    className="uppercase text-sm py-2">
                     Email
                   </label>
                   <input
@@ -141,8 +148,7 @@ const Contact = () => {
               <div className="flex items-center">
                 <button
                   type="submit"
-                  className="w-[90%] mx-auto p-4 text-gray-100 mt-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#21568a] to-[#1d97bd] cursor-pointer hover:scale-105 ease-in duration-300"
-                >
+                  className="w-[90%] mx-auto p-4 text-gray-100 mt-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#21568a] to-[#1d97bd] cursor-pointer hover:scale-105 ease-in duration-300">
                   Send Message
                 </button>
               </div>

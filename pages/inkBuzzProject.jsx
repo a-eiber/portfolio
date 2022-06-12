@@ -53,10 +53,13 @@ const inkBuzzProject = () => {
             specific designs.
           </p>
 
-          <a href="https://ink-buzz.web.app/">
+          <a href="https://ink-buzz.web.app/" target="_blank" rel="noreferrer">
             <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           </a>
-          <a href="https://github.com/FSA-CapStone-TeamAwesome/ink-buzz-pwa">
+          <a
+            href="https://github.com/FSA-CapStone-TeamAwesome/ink-buzz-pwa"
+            target="_blank"
+            rel="noreferrer">
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </a>
         </div>
