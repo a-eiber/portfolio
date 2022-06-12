@@ -45,7 +45,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="w-full lg:h-screen">
+    <section id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 pt-8 w-full">
         <p className="text-xl tracking-widest uppercase text-[#21568a]">
           Contact
@@ -164,7 +164,7 @@ const Contact = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

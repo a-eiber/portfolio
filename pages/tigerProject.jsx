@@ -34,12 +34,12 @@ const tigerProject = () => {
             dashboard for site administrator to log in and make required
             updates. Project is still in progress.
           </p>
-          {/* <button className="px-8 py-2 mt-4 mr-8">Demo</button> */}
+          {/* <button className="px-8 py-2 mt-4 mr-8 btn">Demo</button> */}
           <a
             href="https://github.com/a-eiber/tigerbasketball"
             target="_blank"
             rel="noreferrer">
-            <button className="px-8 py-2 mt-4 mr-8">Code</button>
+            <button className="px-8 py-2 mt-4 mr-8 btn">Code</button>
           </a>
         </div>
         <div className="shadow-xl shadow-gray-400 rounded-xl p-4">

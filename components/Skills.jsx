@@ -15,7 +15,7 @@ import mongoImg from '../public/assets/skills/mongo.png';
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-full p-2 pt-8">
+    <section id="skills" className="w-full p-2 pt-8">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-[#21568a]">
           Skills
@@ -156,7 +156,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

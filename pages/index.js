@@ -16,7 +16,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="favicon.ico" />
       </Head>
-      <Header />
       <Main />
       <About />
       <Skills />

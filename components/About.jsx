@@ -5,7 +5,7 @@ import profile from '../public/assets/profile.jpeg';
 
 const About = () => {
   return (
-    <div id="about" className="w-full p-2 flex items-center pt-8 mx-5">
+    <section id="about" className="w-full p-2 flex items-center pt-8 mx-5">
       <div className="max-w-[1240px] m-auto">
         <div>
           <p className="uppercase text-xl tracking-widest text-[#21568a]">
@@ -13,7 +13,7 @@ const About = () => {
           </p>
           <h2 className="py-4">Who I Am</h2>
           <div className="mx-5">
-            <div className="sm:w-96 h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 mb-6">
+            <figure className="sm:w-96 h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 mb-6">
               <Image
                 src={profile}
                 alt="/"
@@ -21,7 +21,7 @@ const About = () => {
                 height="300"
                 className="rounded-xl"
               />
-            </div>
+            </figure>
 
             <p className="py-2 text-gray-600">
               Before I became a software engineer, I was a Naval Officer for six
@@ -67,7 +67,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

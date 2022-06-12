@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { GrDocumentUser } from 'react-icons/gr';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import Link from 'next/link';
 import Tooltip from '@nextui-org/react/tooltip';
+import Header from './Header';
 
 const Main = () => {
+  const [collapse, setCollapse] = useState(true);
+
   return (
     <div id="home" className="w-full text-center">
-      <div className="max-w-[1240px] mx-auto p-2 flex justify-center items-center">
+      <Header collapse={collapse} setCollapse={setCollapse} />
+      <main
+        className={
+          collapse
+            ? 'max-w-[1240px] mx-auto p-2 flex justify-center items-center'
+            : 'mt-60'
+        }>
         <div>
-          <h1 className="py-4 mt-4 text-gray-700">
+          <h1 className="py-4 text-gray-700">
             Hi, I&apos;m <span className="text-[#21568a]">Alec</span>
           </h1>
           <h1 className="py-4 text-gray-700">A Full Stack Engineer</h1>
@@ -67,7 +76,7 @@ const Main = () => {
             </a>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   );
 };
