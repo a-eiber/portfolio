@@ -58,7 +58,7 @@ const About = () => {
 
             <p className="py-2 text-gray-600 underline cursor-pointer">
               <a
-                href="/assets/Alec_Eiber_Resume1.pdf"
+                href="/assets/Alec_Eiber_Resume.pdf"
                 target="_blank"
                 rel="noreferrer">
                 Click here to view my resume

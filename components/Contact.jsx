@@ -93,7 +93,7 @@ const Contact = () => {
 
                 <div className="mx-auto ">
                   <a
-                    href="/assets/Alec_Eiber_Resume1.pdf"
+                    href="/assets/Alec_Eiber_Resume.pdf"
                     target="_blank"
                     rel="noreferrer">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300">

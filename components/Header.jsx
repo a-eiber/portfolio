@@ -78,7 +78,7 @@ const Header = ({ collapse, setCollapse }) => {
               </li>
             </Link>
             <Link
-              href="/assets/Alec_Eiber_Resume1.pdf"
+              href="/assets/Alec_Eiber_Resume.pdf"
               target="_blank"
               rel="noreferrer">
               <li

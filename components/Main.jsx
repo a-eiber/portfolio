@@ -30,7 +30,7 @@ const Main = () => {
           </p>
           <p className="pt-2 pb-8 text-gray-600 max-w-[70%] m-auto underline cursor-pointer">
             <a
-              href="/assets/Alec_Eiber_Resume1.pdf"
+              href="/assets/Alec_Eiber_Resume.pdf"
               target="_blank"
               rel="noreferrer">
               Click here to view my resume
@@ -65,7 +65,7 @@ const Main = () => {
               </Link>
             </Tooltip>
             <a
-              href="/assets/Alec_Eiber_Resume1.pdf"
+              href="/assets/Alec_Eiber_Resume.pdf"
               target="_blank"
               rel="noreferrer">
               <Tooltip content={'Resume'} rounded color="primary">
