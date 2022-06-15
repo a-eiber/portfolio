@@ -36,11 +36,30 @@ const PokeProject = () => {
       <div className="max-w-[1240px] mx-auto p-2 flex flex-col pt-8 px-8">
         <div className="col-span-4">
           <h2>Overview</h2>
+          <p className="my-3">
+            Along with three other software developers, we created an online
+            e-commerce version of the Poké-Mart store popularly found in Pokémon
+            games. I personally focused creating the APIs, developing the cart
+            functionality and it&apos;s persistence on the database, as well as
+            user authentication and storing guest&apos;s carts in local storage.
+          </p>
           <p>
-            An online e-commerce version of the store popularly found in Pokémon
-            games. Guests can add items to their cart, edit cart items, and
-            checkout, with cart items saved in local storage. Users who create
-            an account can have their cart items persist in an SQL database.
+            We built the app in about a week and it&apos;s intended to be a
+            minimum viable product for a e-commerce website. The site uses
+            React, Redux Toolkit, and a PostgreSQL database to store product and
+            user information. Users (both guests and signed-in customers) can
+            browse the store, add items to their cart, edit cart items, and
+            checkout. Non-signed in users (guests) have their cart items saved
+            in local storage while customers who&apos;ve created an account can
+            have their cart items persist in the database.
+          </p>
+
+          <p className="my-3">
+            Check out the code below to view all the different components as
+            well as the Readme file for more information. You can also view the
+            demo below and create an account, browse, add items to your cart,
+            and simulate the checkout functionality (please note, we do not
+            store any information on the checkout page).
           </p>
           <a
             href="https://poke-mart-fsa.herokuapp.com/"
@@ -55,7 +74,7 @@ const PokeProject = () => {
             <button className="px-8 py-2 mt-4 mr-8 btn">Code</button>
           </a>
         </div>
-        <div className="shadow-xl shadow-gray-400 rounded-xl p-4">
+        <div className="shadow-xl shadow-gray-400 rounded-xl p-4 mt-5">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies Used:</p>
             <div className="grid grid-cols-1 sm:grid-cols-3">

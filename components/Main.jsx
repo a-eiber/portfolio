@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import Link from 'next/link';
 import Tooltip from '@nextui-org/react/tooltip';
 import Header from './Header';
+import 'animate.css';
 
 const Main = () => {
   const [collapse, setCollapse] = useState(true);
@@ -19,22 +20,21 @@ const Main = () => {
             : 'mt-60'
         }>
         <div>
-          <h1 className="py-4 text-gray-700">
+          <h1 className="animate__animated animate__tada animate__slow py-4 text-gray-700">
             Hi, I&apos;m <span className="text-[#21568a]">Alec</span>
           </h1>
           <h1 className="py-4 text-gray-700">A Full Stack Engineer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            I&apos;m a software engineer and US Navy veteran living in New York
-            City. I love programming and have a passion for building tech
-            that&apos;s impactful to people.
-          </p>
-          <p className="pt-2 pb-8 text-gray-600 max-w-[70%] m-auto underline cursor-pointer">
-            <a
-              href="/assets/Alec_Eiber_Resume.pdf"
-              target="_blank"
-              rel="noreferrer">
-              Click here to view my resume
-            </a>
+            I&apos;m a{' '}
+            <span className="text-[#21568a]">
+              <strong>software engineer</strong>
+            </span>{' '}
+            and{' '}
+            <span className="text-[#21568a]">
+              <strong>US Navy veteran</strong>
+            </span>{' '}
+            living in New York City. I love programming and have a passion for
+            building tech that&apos;s impactful to people.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <a

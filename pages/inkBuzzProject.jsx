@@ -36,11 +36,11 @@ const InkBuzzProject = () => {
         <div className="col-span-4">
           <h2>Overview</h2>
           <p className="my-3">
-            Managed a team of 3 developers in creating, designing, and deploying
-            a social media web application where users connect with tattoo
-            artists. This was a group project built in 20 days and is intended
-            to showcase a minimum viable product for a social media app with
-            crypto built-in.
+            I managed a team of three developers in creating, designing, and
+            deploying a social media web application where users connect with
+            tattoo artists. This was a group project built in less than three
+            weeks and is intended to showcase a minimum viable product for a
+            social media app with a built-in crypto payment feature.
           </p>
 
           <p>
@@ -69,7 +69,7 @@ const InkBuzzProject = () => {
             <button className="px-8 py-2 mt-4 mr-8 btn">Code</button>
           </a>
         </div>
-        <div className="shadow-xl shadow-gray-400 rounded-xl p-4">
+        <div className="shadow-xl shadow-gray-400 rounded-xl p-4 mt-5">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies Used:</p>
             <div className="grid grid-cols-1 sm:grid-cols-3">

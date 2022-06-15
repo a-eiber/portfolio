@@ -32,16 +32,17 @@ const About = () => {
             <p className="py-2 text-gray-600">
               After completing my service and being honorably discharged, my
               passion for coding grew stronger, so I decided to get a formal
-              education in full stack development. I applied to{' '}
+              education in full stack development. I applied to Fullstack
+              Academy&apos;s Software Engineering immersive program and was
+              fortunate enough to be accepted and{' '}
               <a
                 href="/assets/certificate.pdf"
                 className="underline cursor-pointer"
                 target="_blank"
                 rel="noreferrer">
-                Fullstack Academy&apos;s
-              </a>{' '}
-              Software Engineering immersive program and was fortunate enough to
-              be accepted and graduate.
+                graduate
+              </a>
+              .
             </p>
 
             <p className="py-2 text-gray-600">

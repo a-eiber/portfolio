@@ -34,11 +34,17 @@ const TigerProject = () => {
       <div className="max-w-[1240px] mx-auto p-2 flex flex-col pt-8 px-8">
         <div className="col-span-4">
           <h2>Overview</h2>
-          <p>
-            Web application used to administer a basketball league, displaying
-            the schedule, results, standings, and news updates. Built a
-            dashboard for site administrator to log in and make required
-            updates. Project is still in progress.
+          <p className="my-3">
+            A personal project, this web application is used to administer a
+            basketball league, displaying the schedule, results, standings, and
+            news updates. I also built a dashboard for the site administrator to
+            log in and make required updates. This project is still in progress.
+          </p>
+          <p className="mb-3">
+            This project is still in progress, and I&apos;m planning on adding
+            additional functionality like accepting registration payments using
+            the Stripe API, as well as ironing out the process for adding games
+            to the schedule and updating results and standings.
           </p>
           {/* <button className="px-8 py-2 mt-4 mr-8 btn">Demo</button> */}
           <a
@@ -48,7 +54,7 @@ const TigerProject = () => {
             <button className="px-8 py-2 mt-4 mr-8 btn">Code</button>
           </a>
         </div>
-        <div className="shadow-xl shadow-gray-400 rounded-xl p-4">
+        <div className="shadow-xl shadow-gray-400 rounded-xl p-4 mt-5">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies Used:</p>
             <div className="grid grid-cols-1 sm:grid-cols-3">
