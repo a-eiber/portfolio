@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.whitespace {
+  white-space: pre-wrap;
+}
+
 @layer base {
   body {
     @apply bg-[#f4f3ee] text-gray-800 tracking-wide;

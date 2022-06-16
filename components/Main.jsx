@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { GrDocumentUser } from 'react-icons/gr';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
@@ -6,9 +6,42 @@ import Link from 'next/link';
 import Tooltip from '@nextui-org/react/tooltip';
 import Header from './Header';
 import 'animate.css';
+import Typewriter from './TypewriterClass.ts';
 
 const Main = () => {
   const [collapse, setCollapse] = useState(true);
+  const [pageLoad, setPageLoad] = useState(false);
+
+  useEffect(() => {
+    if (pageLoad) {
+      const typewriter = new Typewriter(document.querySelector('.whitespace'), {
+        loop: true,
+        typingSpeed: 100,
+        deletingSpeed: 50,
+      });
+
+      setTimeout(() => {
+        typewriter
+          .typeString(' A Full Stack Engineer')
+          .pauseFor(1500)
+          .deleteChars(20)
+          .typeString(' US Navy Veteran')
+          .pauseFor(1500)
+          .deleteChars(16)
+          .typeString(' Software Developer')
+          .pauseFor(1500)
+          .deleteChars(19)
+          .typeString(' Web Developer')
+          .pauseFor(1500)
+          .deleteChars(15)
+          .start();
+      }, 2500);
+    }
+  }, [pageLoad]);
+
+  useEffect(() => {
+    setPageLoad(true);
+  }, []);
 
   return (
     <div id="home" className="w-full text-center">
@@ -23,7 +56,9 @@ const Main = () => {
           <h1 className="animate__animated animate__tada animate__slow py-4 text-gray-700">
             Hi, I&apos;m <span className="text-[#21568a]">Alec</span>
           </h1>
-          <h1 className="py-4 text-gray-700">A Full Stack Engineer</h1>
+          <h1 className="py-4 text-gray-700">
+            <span className="whitespace"></span>
+          </h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             I&apos;m a{' '}
             <span className="text-[#21568a]">
