@@ -59,7 +59,7 @@ const Main = () => {
           <h1 className="py-4 text-gray-700">
             <span className="whitespace"></span>
           </h1>
-          <p className="py-4 text-gray-600 max-w-[70%] m-auto">
+          <p className="py-4 text-gray-600 max-w-[38em] m-auto">
             I&apos;m a{' '}
             <span className="text-[#21568a]">
               <strong>software engineer</strong>
