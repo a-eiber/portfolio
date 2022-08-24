@@ -14,7 +14,7 @@ const PokeProject = () => {
         className={
           collapse
             ? 'w-screen h-[30vh] relative'
-            : 'w-screen h-[30vh] relative mt-60'
+            : 'w-screen h-[30vh] relative mt-64'
         }>
         <div className="absolute top-0 left-0 w-full h-[30vh] bg-black/80 z-10" />
         <Image

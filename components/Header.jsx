@@ -8,7 +8,7 @@ const Header = ({ collapse, setCollapse }) => {
     setCollapse(!collapse);
   };
   return (
-    <nav className="bg-[#f4f3ee] px-2 sm:px-4 py-2.5 w-full h-20">
+    <nav className="bg-[#f4f3ee] px-2 sm:px-4 py-2.5 w-full h-28">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <Link href="/">
           <Image
@@ -55,12 +55,22 @@ const Header = ({ collapse, setCollapse }) => {
               : 'w-full md:block md:w-auto'
           }
           id="mobile-menu">
-          <ul className="flex flex-col items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+          <ul className="flex flex-col items-center mt-4 md:flex-row md:space-x-5 md:mt-0 md:text-sm md:font-medium">
             <Link href="/" aria-current="page">
               <li
                 className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 onClick={() => setCollapse(true)}>
                 Home
+              </li>
+            </Link>
+            <Link
+              href="/assets/Alec_Eiber_Resume.pdf"
+              target="_blank"
+              rel="noreferrer">
+              <li
+                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                onClick={() => setCollapse(true)}>
+                Resume
               </li>
             </Link>
             <Link href="/#about">
@@ -77,21 +87,19 @@ const Header = ({ collapse, setCollapse }) => {
                 Skills
               </li>
             </Link>
-            <Link
-              href="/assets/Alec_Eiber_Resume.pdf"
-              target="_blank"
-              rel="noreferrer">
-              <li
-                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                onClick={() => setCollapse(true)}>
-                Resume
-              </li>
-            </Link>
+
             <Link href="/#projects">
               <li
                 className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 onClick={() => setCollapse(true)}>
                 Projects
+              </li>
+            </Link>
+            <Link href="/#posts">
+              <li
+                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                onClick={() => setCollapse(true)}>
+                Posts
               </li>
             </Link>
             <Link href="/#contact">
