@@ -32,7 +32,7 @@ const About = () => {
               <p className="py-2 text-gray-600">
                 After completing my service and being honorably discharged, my
                 passion for coding grew stronger, so I decided to get a formal
-                education in full stack development. I applied to Fullstack
+                education in software development. I applied to Fullstack
                 Academy&apos;s Software Engineering immersive program and was
                 fortunate enough to be accepted and{' '}
                 <a
@@ -47,8 +47,8 @@ const About = () => {
 
               <p className="py-2 text-gray-600">
                 I really enjoy being a part of something impactful to people,
-                and right now, I&apos;m looking for opportunities to grow in my
-                career and learn as much as I can.
+                and right now, I&apos;m currently working as a software engineer
+                for Oracle, on the Oracle Cloud Infrastructure (OCI) team.
               </p>
 
               <p className="py-2 text-gray-600 underline cursor-pointer">

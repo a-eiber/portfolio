@@ -16,7 +16,7 @@ const Projects = () => {
           <p className="text-xs text-center sm:text-left sm:text-base tracking-widest uppercase py-4">
             Click on the images below to view additional details
           </p>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-3 gap-8">
             <ProjectItem
               title="Ink Buzz"
               backgroundImg={inkImg}

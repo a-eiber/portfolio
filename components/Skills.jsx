@@ -11,7 +11,7 @@ import githubImg from '../public/assets/skills/github1.png';
 import htmlImg from '../public/assets/skills/html.png';
 import cssImg from '../public/assets/skills/css.png';
 import firebaseImg from '../public/assets/skills/firebase.png';
-import mongoImg from '../public/assets/skills/mongo.png';
+import javaImg from '../public/assets/skills/java.png';
 
 const Skills = () => {
   return (
@@ -52,6 +52,17 @@ const Skills = () => {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>JavaScript</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image src={javaImg} alt="/" width="64px" height="64px" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Java</h3>
               </div>
             </div>
           </div>
@@ -129,17 +140,6 @@ const Skills = () => {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Firebase</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image src={mongoImg} alt="/" width="64px" height="64px" />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>MongoDB</h3>
               </div>
             </div>
           </div>
