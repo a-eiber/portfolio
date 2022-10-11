@@ -1,7 +1,6 @@
-import Image from 'next/image';
-import React from 'react';
-import Link from 'next/link';
-import profile from '../public/assets/profile.jpeg';
+import Image from "next/image";
+import React from "react";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -15,7 +14,7 @@ const About = () => {
           <div className="mx-5 md:grid md:grid-cols-2 md:gap-1 content-center items-center">
             <figure className="w-96 md:w-80 lg:w-96 h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 mb-6 md:my-auto">
               <Image
-                src={profile}
+                src="https://avatars.githubusercontent.com/u/97812277"
                 alt="/"
                 width="400"
                 height="400"
@@ -34,12 +33,13 @@ const About = () => {
                 passion for coding grew stronger, so I decided to get a formal
                 education in software development. I applied to Fullstack
                 Academy&apos;s Software Engineering immersive program and was
-                fortunate enough to be accepted and{' '}
+                fortunate enough to be accepted and{" "}
                 <a
                   href="/assets/certificate.pdf"
                   className="underline cursor-pointer"
                   target="_blank"
-                  rel="noreferrer">
+                  rel="noreferrer"
+                >
                   graduate
                 </a>
                 .
@@ -61,7 +61,8 @@ const About = () => {
                 <a
                   href="/assets/Alec_Eiber_Resume.pdf"
                   target="_blank"
-                  rel="noreferrer">
+                  rel="noreferrer"
+                >
                   Click here to view my resume
                 </a>
               </p>

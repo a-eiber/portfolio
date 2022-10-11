@@ -24,7 +24,7 @@ const PokeProject = () => {
           src={pokeImage}
           alt="/"
         />
-        <div className="absolute top-[70%] max-w-[36em] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
+        <div className="absolute top-[70%] max-w-[42em] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2  ml-5">Poké Mart E-Commerce Store</h2>
           <h3 className="ml-5 mb-2">
             An e-commerce website based on the in-game marts found in the
@@ -33,7 +33,7 @@ const PokeProject = () => {
         </div>
       </div>
 
-      <div className="max-w-[36em] mx-auto p-2 flex flex-col pt-8 px-8">
+      <div className="max-w-[42em] mx-auto p-2 flex flex-col pt-8 px-8">
         <div className="col-span-4">
           <h2>Overview</h2>
           <p className="my-3">
