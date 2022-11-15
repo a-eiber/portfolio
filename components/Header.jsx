@@ -95,13 +95,13 @@ const Header = ({ collapse, setCollapse }) => {
                 Projects
               </li>
             </Link>
-            <Link href="/#posts">
+            {/* <Link href="/#posts">
               <li
                 className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 onClick={() => setCollapse(true)}>
                 Posts
               </li>
-            </Link>
+            </Link> */}
             <Link href="/#contact">
               <li
                 className="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
