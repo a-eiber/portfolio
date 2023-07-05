@@ -1,11 +1,12 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../components/Header';
 
-const confirm = () => {
+const Confirm = () => {
+  const [collapse, setCollapse] = useState(true);
   return (
     <div>
-      <Header />
+      <Header collapse={collapse} setCollapse={setCollapse} />
       <h1 className="m-10">
         Your email has been sent! I&apos;ll get back to you as soon as possible.
       </h1>
@@ -16,4 +17,4 @@ const confirm = () => {
   );
 };
 
-export default confirm;
+export default Confirm;

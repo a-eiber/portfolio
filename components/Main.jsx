@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
-import { GrDocumentUser } from 'react-icons/gr';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import Link from 'next/link';
-import Tooltip from '@nextui-org/react/tooltip';
-import Header from './Header';
-import 'animate.css';
-import Typewriter from './TypewriterClass.ts';
+import React, { useState, useEffect } from "react";
+import { AiOutlineMail } from "react-icons/ai";
+import { GrDocumentUser } from "react-icons/gr";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import Link from "next/link";
+import Tooltip from "@nextui-org/react/tooltip";
+import Header from "./Header";
+import "animate.css";
+import Typewriter from "./TypewriterClass.ts";
 
 const Main = () => {
   const [collapse, setCollapse] = useState(true);
@@ -14,7 +14,7 @@ const Main = () => {
 
   useEffect(() => {
     if (pageLoad) {
-      const typewriter = new Typewriter(document.querySelector('.whitespace'), {
+      const typewriter = new Typewriter(document.querySelector(".whitespace"), {
         loop: true,
         typingSpeed: 100,
         deletingSpeed: 50,
@@ -22,20 +22,23 @@ const Main = () => {
 
       setTimeout(() => {
         typewriter
-          .typeString(' A Full Stack Engineer')
+          .typeString("  ")
+          .pauseFor(0)
+          .deleteChars(0)
+          .typeString("A Full Stack Engineer ")
           .pauseFor(1500)
-          .deleteChars(20)
-          .typeString(' US Navy Veteran')
+          .deleteChars(21)
+          .typeString(" US Navy Veteran ")
           .pauseFor(1500)
-          .deleteChars(16)
-          .typeString(' Software Developer')
+          .deleteChars(17)
+          .typeString(" Software Engineer ")
           .pauseFor(1500)
           .deleteChars(19)
-          .typeString(' Web Developer')
+          .typeString(" Web Developer ")
           .pauseFor(1500)
-          .deleteChars(15)
+          .deleteChars(16)
           .start();
-      }, 2500);
+      }, 1250);
     }
   }, [pageLoad]);
 
@@ -49,25 +52,26 @@ const Main = () => {
       <main
         className={
           collapse
-            ? 'max-w-[1240px] mx-auto p-2 flex justify-center items-center'
-            : 'mt-60'
-        }>
+            ? "max-w-[1240px] mx-auto p-2 flex justify-center items-center"
+            : "mt-60"
+        }
+      >
         <div>
-          <h1 className="animate__animated animate__tada animate__slow py-4 text-gray-700">
+          <h1 className="animate__animated animate__zoomInDown py-4 text-gray-700">
             Hi, I&apos;m <span className="text-[#21568a]">Alec</span>
           </h1>
           <h1 className="py-4 text-gray-700">
             <span className="whitespace"></span>
           </h1>
           <p className="py-4 text-gray-600 max-w-[38em] m-auto">
-            I&apos;m a{' '}
+            I&apos;m a{" "}
             <span className="text-[#21568a]">
               <strong>software engineer</strong>
-            </span>{' '}
-            and{' '}
+            </span>{" "}
+            and{" "}
             <span className="text-[#21568a]">
               <strong>US Navy veteran</strong>
-            </span>{' '}
+            </span>{" "}
             living in New York City. I love programming and have a passion for
             building tech that&apos;s impactful to people.
           </p>
@@ -75,8 +79,9 @@ const Main = () => {
             <a
               href="https://www.linkedin.com/in/aleceiber"
               target="_blank"
-              rel="noreferrer">
-              <Tooltip content={'LinkedIn'} rounded color="primary">
+              rel="noreferrer"
+            >
+              <Tooltip content={"LinkedIn"} rounded color="primary">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <FaLinkedinIn />
                 </div>
@@ -85,14 +90,15 @@ const Main = () => {
             <a
               href="https://www.github.com/a-eiber"
               target="_blank"
-              rel="noreferrer">
-              <Tooltip content={'GitHub'} rounded color="primary">
+              rel="noreferrer"
+            >
+              <Tooltip content={"GitHub"} rounded color="primary">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <FaGithub />
                 </div>
               </Tooltip>
             </a>
-            <Tooltip content={'Email me below'} rounded color="primary">
+            <Tooltip content={"Email me below"} rounded color="primary">
               <Link href="/#contact">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <AiOutlineMail />
@@ -102,8 +108,9 @@ const Main = () => {
             <a
               href="/assets/Alec_Eiber_Resume.pdf"
               target="_blank"
-              rel="noreferrer">
-              <Tooltip content={'Resume'} rounded color="primary">
+              rel="noreferrer"
+            >
+              <Tooltip content={"Resume"} rounded color="primary">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <GrDocumentUser />
                 </div>
