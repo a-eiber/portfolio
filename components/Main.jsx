@@ -22,21 +22,18 @@ const Main = () => {
 
       setTimeout(() => {
         typewriter
-          .typeString("  ")
-          .pauseFor(0)
-          .deleteChars(0)
-          .typeString("A Full Stack Engineer ")
-          .pauseFor(1500)
-          .deleteChars(21)
-          .typeString(" US Navy Veteran ")
-          .pauseFor(1500)
-          .deleteChars(17)
-          .typeString(" Software Engineer ")
+          .typeString("A Full Stack Engineer")
           .pauseFor(1500)
           .deleteChars(19)
-          .typeString(" Web Developer ")
+          .typeString("US Navy Veteran")
           .pauseFor(1500)
-          .deleteChars(16)
+          .deleteChars(15)
+          .typeString("Software Engineer")
+          .pauseFor(1500)
+          .deleteChars(17)
+          .typeString("Web Developer")
+          .pauseFor(1500)
+          .deleteChars(15)
           .start();
       }, 1250);
     }
@@ -47,7 +44,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div id="home" className="w-full text-center">
+    <div id="home" className="w-full text-center container">
       <Header collapse={collapse} setCollapse={setCollapse} />
       <main
         className={
@@ -60,9 +57,9 @@ const Main = () => {
           <h1 className="animate__animated animate__zoomInDown py-4 text-gray-700">
             Hi, I&apos;m <span className="text-[#21568a]">Alec</span>
           </h1>
-          <h1 className="py-4 text-gray-700">
+          <h2 className="py-4 text-gray-700 h-24">
             <span className="whitespace"></span>
-          </h1>
+          </h2>
           <p className="py-4 text-gray-600 max-w-[38em] m-auto">
             I&apos;m a{" "}
             <span className="text-[#21568a]">

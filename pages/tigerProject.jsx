@@ -24,7 +24,7 @@ const TigerProject = () => {
           src={tigerImage}
           alt="/"
         />
-        <div className="absolute top-[70%] max-w-[42em] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
+        <div className="absolute top-[70%] max-w-[48em] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2 ml-5">Tiger Sports Basketball League</h2>
           <h3 className="ml-5 mb-2">
             A league website for players, coaches, and administrators

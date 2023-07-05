@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <section id="about" className="w-full p-2 flex items-center pt-8 mx-5">
+    <section id="about" className="w-full container p-2 flex items-center pt-8 mx-5">
       <div className="max-w-[1240px] m-auto">
         <div>
           <p className="uppercase text-xl tracking-widest text-[#21568a]">
