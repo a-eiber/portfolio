@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import React, { useState } from 'react';
-import inkImage from '../public/assets/projects/inkBuzz.jpg';
-import { RiRadioButtonFill } from 'react-icons/ri';
-import Link from 'next/link';
-import Header from '../components/Header';
+import Image from "next/image";
+import React, { useState } from "react";
+import inkImage from "../public/assets/projects/inkBuzz.jpg";
+import { RiRadioButtonFill } from "react-icons/ri";
+import Link from "next/link";
+import Header from "../components/Header";
 
 const InkBuzzProject = () => {
   const [collapse, setCollapse] = useState(true);
@@ -13,9 +13,10 @@ const InkBuzzProject = () => {
       <div
         className={
           collapse
-            ? 'w-screen h-[30vh] relative'
-            : 'w-screen h-[30vh] relative mt-64'
-        }>
+            ? "w-screen h-[30vh] relative"
+            : "w-screen h-[30vh] relative mt-64"
+        }
+      >
         <div className="absolute top-0 left-0 w-full h-[30vh] bg-black/80 z-10" />
         <Image
           className="absolute z-1"
@@ -32,7 +33,7 @@ const InkBuzzProject = () => {
         </div>
       </div>
 
-      <div className="max-w-[42em] mx-auto px-8 p-2 flex flex-col pt-8">
+      <div className="max-w-[42em] mx-auto px-8 p-2 flex flex-col pt-8 dark:text-white">
         <div className="col-span-4">
           <h2>Overview</h2>
           <p className="my-3">
@@ -60,51 +61,56 @@ const InkBuzzProject = () => {
           </p>
 
           <a href="https://ink-buzz.web.app/" target="_blank" rel="noreferrer">
-            <button className="px-8 py-2 mt-4 mr-8 btn">Demo</button>
+            <button className="px-8 py-2 mt-4 mr-8 btn dark:shadow-none">
+              Demo
+            </button>
           </a>
           <a
             href="https://github.com/FSA-CapStone-TeamAwesome/ink-buzz-pwa"
             target="_blank"
-            rel="noreferrer">
-            <button className="px-8 py-2 mt-4 mr-8 btn">Code</button>
+            rel="noreferrer"
+          >
+            <button className="px-8 py-2 mt-4 mr-8 btn dark:shadow-none">
+              Code
+            </button>
           </a>
         </div>
-        <div className="shadow-xl shadow-gray-400 rounded-xl p-4 mt-5">
+        <div className="shadow-xl shadow-gray-400 rounded-xl p-4 mt-5 dark:shadow-none">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies Used:</p>
             <div className="grid grid-cols-1 sm:grid-cols-3">
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-600 py-2 flex items-center dark:text-white">
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-600 py-2 flex items-center dark:text-white">
                 <RiRadioButtonFill className="pr-1" /> Redux Toolkit
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-600 py-2 flex items-center dark:text-white">
                 <RiRadioButtonFill className="pr-1" /> Coinbase Wallet
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-600 py-2 flex items-center dark:text-white">
                 <RiRadioButtonFill className="pr-1" /> Ether.js
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-600 py-2 flex items-center dark:text-white">
                 <RiRadioButtonFill className="pr-1" /> Infura
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-600 py-2 flex items-center dark:text-white">
                 <RiRadioButtonFill className="pr-1" /> Web3.js
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-600 py-2 flex items-center dark:text-white">
                 <RiRadioButtonFill className="pr-1" /> Wallet Connect
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-600 py-2 flex items-center dark:text-white">
                 <RiRadioButtonFill className="pr-1" /> Google Firebase
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-600 py-2 flex items-center dark:text-white">
                 <RiRadioButtonFill className="pr-1" /> Chakra UI
               </p>
             </div>
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer my-10">Back</p>
+          <p className="underline cursor-pointer my-10 dark:text-white">Back</p>
         </Link>
       </div>
     </div>

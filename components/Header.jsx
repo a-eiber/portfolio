@@ -8,7 +8,7 @@ const Header = ({ collapse, setCollapse }) => {
   return (
     <nav className="bg-[#f4f3ee] px-2 sm:px-4 py-2.5 w-full h-28 dark:bg-[#152028]">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
-        <div className="dark:text-white text-4xl sm:text-5xl font-bold hover:italic tracking-widest pt-2 pl-2">
+        <div className="dark:text-white text-4xl sm:text-5xl font-bold hover:italic tracking-widest pt-2 pl-2 font-sans text-[#21568a]">
           <Link href="/">Alec Eiber</Link>
         </div>
 

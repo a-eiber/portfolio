@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import React, { useState } from 'react';
-import pokeImage from '../public/assets/projects/poke-mart2.jpg';
-import { RiRadioButtonFill } from 'react-icons/ri';
-import Link from 'next/link';
-import Header from '../components/Header';
+import Image from "next/image";
+import React, { useState } from "react";
+import pokeImage from "../public/assets/projects/poke-mart2.jpg";
+import { RiRadioButtonFill } from "react-icons/ri";
+import Link from "next/link";
+import Header from "../components/Header";
 
 const PokeProject = () => {
   const [collapse, setCollapse] = useState(true);
@@ -13,9 +13,10 @@ const PokeProject = () => {
       <div
         className={
           collapse
-            ? 'w-screen h-[30vh] relative'
-            : 'w-screen h-[30vh] relative mt-64'
-        }>
+            ? "w-screen h-[30vh] relative"
+            : "w-screen h-[30vh] relative mt-64"
+        }
+      >
         <div className="absolute top-0 left-0 w-full h-[30vh] bg-black/80 z-10" />
         <Image
           className="absolute z-1"
@@ -34,7 +35,7 @@ const PokeProject = () => {
       </div>
 
       <div className="max-w-[42em] mx-auto p-2 flex flex-col pt-8 px-8">
-        <div className="col-span-4">
+        <div className="col-span-4 dark:text-white">
           <h2>Overview</h2>
           <p className="my-3">
             Along with three other software developers, we created an online
@@ -56,57 +57,61 @@ const PokeProject = () => {
 
           <p className="my-3">
             Check out the code below to view all the different components as
-            well as the Readme file for more information. You can also view the
-            demo below and create an account, browse, add items to your cart,
-            and simulate the checkout functionality (please note, we do not
-            store any information on the checkout page).
+            well as the Readme file for more information. The demo below was
+            originally hosted on Heroku, but since they shifted to paid plans,
+            the store is no longer available to view.
           </p>
-          <a
+          {/* <a
             href="https://poke-mart-fsa.herokuapp.com/"
             target="_blank"
             rel="noreferrer">
             <button className="px-8 py-2 mt-4 mr-8 btn">Demo</button>
-          </a>
+          </a> */}
           <a
             href="https://github.com/a-eiber/poke-mart"
             target="_blank"
-            rel="noreferrer">
-            <button className="px-8 py-2 mt-4 mr-8 btn">Code</button>
+            rel="noreferrer"
+          >
+            <button className="px-8 py-2 mt-4 mr-8 btn dark:shadow-none">
+              Code
+            </button>
           </a>
         </div>
-        <div className="shadow-xl shadow-gray-400 rounded-xl p-4 mt-5">
+        <div className="shadow-xl shadow-gray-400 rounded-xl p-4 mt-5 dark:shadow-none">
           <div className="p-2">
-            <p className="text-center font-bold pb-2">Technologies Used:</p>
+            <p className="text-center font-bold pb-2 dark:text-white">
+              Technologies Used:
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-3">
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-600 py-2 flex items-center dark:text-white">
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-600 py-2 flex items-center dark:text-white">
                 <RiRadioButtonFill className="pr-1" /> Redux Toolkit
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-600 py-2 flex items-center dark:text-white">
                 <RiRadioButtonFill className="pr-1" /> PostgreSQL
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-600 py-2 flex items-center dark:text-white">
                 <RiRadioButtonFill className="pr-1" /> Sequelize
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-600 py-2 flex items-center dark:text-white">
                 <RiRadioButtonFill className="pr-1" /> Node
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-600 py-2 flex items-center dark:text-white">
                 <RiRadioButtonFill className="pr-1" /> Express
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-600 py-2 flex items-center dark:text-white">
                 <RiRadioButtonFill className="pr-1" /> React-Bootstrap
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-gray-600 py-2 flex items-center dark:text-white">
                 <RiRadioButtonFill className="pr-1" /> JSON Web Tokens
               </p>
             </div>
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer my-10">Back</p>
+          <p className="underline cursor-pointer my-10 dark:text-white">Back</p>
         </Link>
       </div>
     </div>

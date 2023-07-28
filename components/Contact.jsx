@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Tooltip from '@nextui-org/react/tooltip';
 import React, { useRef } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
-import { GrDocumentUser } from 'react-icons/gr';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp, HiOutlineDocumentDownload } from 'react-icons/hi';
 import emailjs from '@emailjs/browser';
@@ -115,7 +114,7 @@ const Contact = () => {
                     type="text"
                     name="user_name"
                     id="user_name"
-                    className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-white text-lg dark:bg-slate-200"
+                    className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-white text-lg dark:bg-slate-100"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -129,7 +128,7 @@ const Contact = () => {
                     type="email"
                     name="user_email"
                     id="user_email"
-                    className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-white text-lg dark:bg-slate-200"
+                    className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-white text-lg dark:bg-slate-100"
                   />
                 </div>
               </div>
@@ -141,7 +140,7 @@ const Contact = () => {
                   required
                   name="message"
                   id="message"
-                  className="border-2 rounded-lg p-3 border-gray-300 text-lg dark:border-white dark:bg-slate-200"
+                  className="border-2 rounded-lg p-3 border-gray-300 text-lg dark:border-white dark:bg-slate-100"
                   rows="10"
                 />
               </div>
