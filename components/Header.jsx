@@ -15,7 +15,7 @@ const Header = ({ collapse, setCollapse }) => {
         <button
           onClick={handleCollapse}
           type="button"
-          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 dark:text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 dark:text-white rounded-lg md:hidden hover:bg-gray-100 dark:hover:bg-[#152028] focus:outline-none focus:ring-2 focus:ring-gray-200"
           aria-controls="mobile-menu"
           aria-expanded="false"
         >
