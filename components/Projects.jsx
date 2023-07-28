@@ -9,11 +9,11 @@ const Projects = () => {
     <section id="projects" className="w-full container p-2 flex items-center pt-8 mx-5">
       <div className="max-w-[1240px] m-auto px-2">
         <div>
-          <p className="uppercase text-xl tracking-widest text-[#21568a]">
+          <p className="uppercase text-xl tracking-widest text-[#21568a] dark:text-white">
             Projects
           </p>
-          <h2 className="py-4">What I&apos;ve Built</h2>
-          <p className="text-xs text-center sm:text-left sm:text-base tracking-widest uppercase py-4">
+          <h2 className="py-4 dark:text-white">What I&apos;ve Built</h2>
+          <p className="text-xs text-center sm:text-left sm:text-base tracking-widest uppercase py-4 dark:text-white">
             Click on the images below to view additional details
           </p>
           <div className="grid lg:grid-cols-3 gap-8">

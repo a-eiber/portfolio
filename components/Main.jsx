@@ -54,19 +54,19 @@ const Main = () => {
         }
       >
         <div>
-          <h1 className="animate__animated animate__zoomInDown py-4 text-gray-700">
-            Hi, I&apos;m <span className="text-[#21568a]">Alec</span>
+          <h1 className="animate__animated animate__zoomInDown py-4 text-gray-700 dark:text-white">
+            Hi, I&apos;m <span className="text-[#21568a] dark:text-white">Alec</span>
           </h1>
-          <h2 className="py-4 text-gray-700 h-24">
+          <h2 className="py-4 text-gray-700 h-24 dark:text-white">
             <span className="whitespace"></span>
           </h2>
-          <p className="py-4 text-gray-600 max-w-[38em] m-auto">
+          <p className="py-4 text-gray-600 max-w-[38em] m-auto dark:text-white">
             I&apos;m a{" "}
-            <span className="text-[#21568a]">
+            <span className="text-[#21568a] font-bold dark:text-white">
               <strong>software engineer</strong>
             </span>{" "}
             and{" "}
-            <span className="text-[#21568a]">
+            <span className="text-[#21568a] font-bold dark:text-white">
               <strong>US Navy veteran</strong>
             </span>{" "}
             living in New York City. I love programming and have a passion for
@@ -79,7 +79,7 @@ const Main = () => {
               rel="noreferrer"
             >
               <Tooltip content={"LinkedIn"} rounded color="primary">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none">
                   <FaLinkedinIn />
                 </div>
               </Tooltip>
@@ -90,14 +90,14 @@ const Main = () => {
               rel="noreferrer"
             >
               <Tooltip content={"GitHub"} rounded color="primary">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none">
                   <FaGithub />
                 </div>
               </Tooltip>
             </a>
             <Tooltip content={"Email me below"} rounded color="primary">
               <Link href="/#contact">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none">
                   <AiOutlineMail />
                 </div>
               </Link>
@@ -108,7 +108,7 @@ const Main = () => {
               rel="noreferrer"
             >
               <Tooltip content={"Resume"} rounded color="primary">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white dark:shadow-none">
                   <GrDocumentUser />
                 </div>
               </Tooltip>

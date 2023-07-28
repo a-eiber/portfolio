@@ -1,97 +1,101 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import logo from '../public/assets/logo.png';
+import Link from "next/link";
+import React from "react";
 
 const Header = ({ collapse, setCollapse }) => {
   const handleCollapse = () => {
     setCollapse(!collapse);
   };
   return (
-    <nav className="bg-[#f4f3ee] px-2 sm:px-4 py-2.5 w-full h-28">
+    <nav className="bg-[#f4f3ee] px-2 sm:px-4 py-2.5 w-full h-28 dark:bg-[#152028]">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
-        <Link href="/">
-          <Image
-            src={logo}
-            alt="/"
-            width="250"
-            height="50"
-            className="cursor-pointer"
-            onClick={() => setCollapse(true)}
-          />
-        </Link>
+        <div className="dark:text-white text-4xl sm:text-5xl font-bold hover:italic tracking-widest pt-2 pl-2">
+          <Link href="/">Alec Eiber</Link>
+        </div>
+
         <button
           onClick={handleCollapse}
           type="button"
-          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 dark:text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
           aria-controls="mobile-menu"
-          aria-expanded="false">
+          aria-expanded="false"
+        >
           <span className="sr-only">Open main menu</span>
           <svg
-            className={collapse ? 'w-6 h-6' : 'hidden'}
+            className={collapse ? "w-6 h-6" : "hidden"}
             fill="currentColor"
             viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
               fillRule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clipRule="evenodd"></path>
+              clipRule="evenodd"
+            ></path>
           </svg>
           <svg
-            className={collapse ? 'hidden' : 'w-6 h-6'}
+            className={collapse ? "hidden" : "w-6 h-6"}
             fill="currentColor"
             viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
               fillRule="evenodd"
               d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clipRule="evenodd"></path>
+              clipRule="evenodd"
+            ></path>
           </svg>
         </button>
         <div
           className={
             collapse
-              ? 'hidden w-full md:block md:w-auto'
-              : 'w-full md:block md:w-auto'
+              ? "hidden w-full md:block md:w-auto"
+              : "w-full md:block md:w-auto"
           }
-          id="mobile-menu">
+          id="mobile-menu"
+        >
           <ul className="flex flex-col items-center mt-4 md:flex-row md:space-x-5 md:mt-0 md:text-sm md:font-medium">
             <Link href="/" aria-current="page">
               <li
-                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                onClick={() => setCollapse(true)}>
+                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:md:hover:text-slate-400 dark:text-white hover:italic"
+                onClick={() => setCollapse(true)}
+              >
                 Home
               </li>
             </Link>
             <Link
               href="/assets/Alec_Eiber_Resume.pdf"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               <li
-                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                onClick={() => setCollapse(true)}>
+                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:md:hover:text-slate-400 dark:text-white hover:italic"
+                onClick={() => setCollapse(true)}
+              >
                 Resume
               </li>
             </Link>
             <Link href="/#about">
               <li
-                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                onClick={() => setCollapse(true)}>
+                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:md:hover:text-slate-400 dark:text-white hover:italic"
+                onClick={() => setCollapse(true)}
+              >
                 About
               </li>
             </Link>
             <Link href="/#skills">
               <li
-                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                onClick={() => setCollapse(true)}>
+                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:md:hover:text-slate-400 dark:text-white hover:italic"
+                onClick={() => setCollapse(true)}
+              >
                 Skills
               </li>
             </Link>
 
             <Link href="/#projects">
               <li
-                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                onClick={() => setCollapse(true)}>
+                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:md:hover:text-slate-400 dark:text-white hover:italic"
+                onClick={() => setCollapse(true)}
+              >
                 Projects
               </li>
             </Link>
@@ -104,8 +108,9 @@ const Header = ({ collapse, setCollapse }) => {
             </Link> */}
             <Link href="/#contact">
               <li
-                className="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                onClick={() => setCollapse(true)}>
+                className="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:md:hover:text-slate-400 dark:text-white hover:italic"
+                onClick={() => setCollapse(true)}
+              >
                 Contact
               </li>
             </Link>

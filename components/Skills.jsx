@@ -17,10 +17,10 @@ const Skills = () => {
   return (
     <section id="skills" className="w-full container p-2 pt-8">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-xl tracking-widest uppercase text-[#21568a]">
+        <p className="text-xl tracking-widest uppercase text-[#21568a] dark:text-white">
           Skills
         </p>
-        <h2 className="py-4">What I Can Do</h2>
+        <h2 className="py-4 dark:text-white">What I Can Do</h2>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-6 sm:mx-auto">
           <div className="p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
@@ -29,7 +29,7 @@ const Skills = () => {
                 <Image src={htmlImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>HTML</h3>
+                <h3 className='dark:text-white'>HTML</h3>
               </div>
             </div>
           </div>
@@ -40,7 +40,7 @@ const Skills = () => {
                 <Image src={cssImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>CSS</h3>
+                <h3 className='dark:text-white'>CSS</h3>
               </div>
             </div>
           </div>
@@ -51,7 +51,7 @@ const Skills = () => {
                 <Image src={javascriptImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>JavaScript</h3>
+                <h3 className='dark:text-white'>JavaScript</h3>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ const Skills = () => {
                 <Image src={javaImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Java</h3>
+                <h3 className='dark:text-white'>Java</h3>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ const Skills = () => {
                 <Image src={nodeImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Node</h3>
+                <h3 className='dark:text-white'>Node</h3>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@ const Skills = () => {
                 <Image src={reactImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>React</h3>
+                <h3 className='dark:text-white'>React</h3>
               </div>
             </div>
           </div>
@@ -95,7 +95,7 @@ const Skills = () => {
                 <Image src={reduxImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Redux</h3>
+                <h3 className='dark:text-white'>Redux</h3>
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@ const Skills = () => {
                 <Image src={postgresImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>PostgreSQL</h3>
+                <h3 className='dark:text-white'>PostgreSQL</h3>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@ const Skills = () => {
                 <Image src={sequelizeImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Sequelize</h3>
+                <h3 className='dark:text-white'>Sequelize</h3>
               </div>
             </div>
           </div>
@@ -128,7 +128,7 @@ const Skills = () => {
                 <Image src={expressImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Express</h3>
+                <h3 className='dark:text-white'>Express</h3>
               </div>
             </div>
           </div>
@@ -139,7 +139,7 @@ const Skills = () => {
                 <Image src={firebaseImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Firebase</h3>
+                <h3 className='dark:text-white'>Firebase</h3>
               </div>
             </div>
           </div>
@@ -150,7 +150,7 @@ const Skills = () => {
                 <Image src={githubImg} alt="/" width="64px" height="64px" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>GitHub</h3>
+                <h3 className='dark:text-white'>GitHub</h3>
               </div>
             </div>
           </div>
