@@ -7,11 +7,11 @@ const Confirm = () => {
   return (
     <div>
       <Header collapse={collapse} setCollapse={setCollapse} />
-      <h1 className="m-10">
+      <h1 className="m-10 dark:text-white">
         Your email has been sent! I&apos;ll get back to you as soon as possible.
       </h1>
       <Link href="/">
-        <p className="underline cursor-pointer mt-10 ml-10">Go Back</p>
+        <p className="underline cursor-pointer mt-10 ml-10 dark:text-white">Go Back</p>
       </Link>
     </div>
   );
