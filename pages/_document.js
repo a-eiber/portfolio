@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   render() {
@@ -16,8 +16,15 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-        <script data-goatcounter="https://alec.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+        <script
+          data-goatcounter="https://alec.goatcounter.com/count"
+          async
+          src="//gc.zgo.at/count.js"
+        ></script>
+        <script
+          src="https://tinylytics.app/embed/C_4s7QmLfzpBqEmiLZkQ.js"
+          defer
+        ></script>
       </Html>
     );
   }
